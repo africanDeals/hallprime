@@ -15,9 +15,9 @@ npm ERR! network 'proxy' config is set properly.  See: 'npm help config'
 
 Solution:
 
-Just find a stable Internet Connection and try again.
+Just find a stable Internet connection and try again.
 
-This second option is not recommended but if you have no other choice, then do this:
+This second option is not recommended, but if you have no other choice, then do this:
 
 ```bash
 npm config set registry http://registry.npmjs.org/

@@ -9,7 +9,7 @@ Description: ...
 This command runs in the root directory of your repository when a new version of your code is pushed, or when you deploy manually. It is typically a script that installs libraries, runs migrations, or compiles resources needed by your app.
 
 ```bash
-npm build --prefix frontend
+npm run build
 ```
 
 ## Start Command
@@ -17,7 +17,7 @@ npm build --prefix frontend
 This command runs in the root directory of your app and is responsible for starting its processes. It is typically used to start a webserver for your app. It can access environment variables defined by you in Render.
 
 ```bash
-npm run start && npm run client
+npm run startwebService
 ```
 
 ## Deploy Hook API
@@ -26,20 +26,6 @@ Your private URL to trigger a deploy for this server. Remember to keep this a se
 
 ```bash
 # Call https://api.render.com/deploy/srv-cdgeu6ien0hj5e9o2740?key=WFB0HyDfuPg
-```
-
-# Other Scripts
-
-```json
-    "scripts": {
-        "start": "node backend/server",
-        "server": "nodemon backend/server",
-        "client": "npm start --prefix frontend",
-        "dev": "concurrently \"npm run server\" \"npm run client\"",
-        "data:import": "node backend/seeder",
-        "data:destroy": "node backend/seeder -d",
-        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
-    }
 ```
 
 ## Connect
