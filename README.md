@@ -9,7 +9,7 @@ Description: ...
 This command runs in the root directory of your repository when a new version of your code is pushed, or when you deploy manually. It is typically a script that installs libraries, runs migrations, or compiles resources needed by your app.
 
 ```bash
-npm run dev
+npm build --prefix frontend
 ```
 
 ## Start Command
@@ -17,7 +17,7 @@ npm run dev
 This command runs in the root directory of your app and is responsible for starting its processes. It is typically used to start a webserver for your app. It can access environment variables defined by you in Render.
 
 ```bash
-npm run start
+npm run start && npm run client
 ```
 
 ## Deploy Hook API
