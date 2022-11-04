@@ -1,4 +1,6 @@
-## Common Isuues
+## Common Isues
+
+Common Issues and How to resolve them.
 
 1
 ```bash
