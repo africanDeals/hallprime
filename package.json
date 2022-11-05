@@ -48,6 +48,13 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.2"
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false,
+    "net": false,
+    "tls": false
+  },
   "devDependencies": {
     "concurrently": "^7.5.0",
     "nodemon": "^2.0.15"
