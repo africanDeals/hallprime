@@ -1,8 +1,7 @@
-import dotenv from "dotenv"
+import dotenv from "dotenv";
 import path from "path";
 import express from "express";
 import cors from "cors";
-import colors from "colors";
 import morgan from "morgan";
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 import connectDB from "./config/db.js";
