@@ -1,6 +1,6 @@
+require('dotenv').config();
 import path from "path";
 import express from "express";
-import dotenv from "dotenv";
 import cors from "cors";
 import colors from "colors";
 import morgan from "morgan";
@@ -13,7 +13,6 @@ import uploadRoutes from "./routes/uploadRoutes.js";
 import Flutterwave from "flutterwave-node-v3";
 import bodyParser from "body-parser";
 
-dotenv.config();
 connectDB();
 const app = express();
 if (process.env.NODE_ENV === "development") {
