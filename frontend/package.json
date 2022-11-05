@@ -31,6 +31,13 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false,
+    "net": false,
+    "tls": false
+  },
   "browserslist": {
     "production": [
       ">0.2%",
