@@ -9,7 +9,7 @@
     "server": "nodemon backend/server",
     "client": "npm run start --prefix frontend",
     "build": "npm run build --prefix frontend",
-    "startwebService": "concurrently \"npm run start\" \"npm run client\"",
+    "webService": "concurrently \"npm run start\" \"npm run client\"",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d",
