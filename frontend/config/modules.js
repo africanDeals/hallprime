@@ -1,6 +1,6 @@
 'use strict';
 
-const fs = require('fs');
+import fs from "fs"
 const path = require('path');
 const paths = require('./paths');
 const chalk = require('react-dev-utils/chalk');
