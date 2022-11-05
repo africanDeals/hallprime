@@ -1,6 +1,7 @@
 { pkgs }: {
 	deps = [
-		pkgs.lsof
+		pkgs.vim
+  pkgs.lsof
   pkgs.remind
   pkgs.nodejs-16_x
         pkgs.nodePackages.typescript-language-server
