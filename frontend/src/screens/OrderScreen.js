@@ -7,7 +7,11 @@ import { Row, Col, ListGroup, Image, Card, Button,form } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
-import dotenv from 'dotenv'
+
+// TODO: Uncomment when this issue is fixed: https://github.com/motdotla/dotenv/issues/692
+// import dotenv from 'dotenv'
+// dotenv.config()
+// For Now just Manually setup env~ Variables
 
 import {
   getOrderDetails,
@@ -20,7 +24,6 @@ import {
   ORDER_DELIVER_RESET,
 } from '../constants/orderConstants'
 
-dotenv.config()
 const OrderScreen = ({ match, history }) => {
   const orderId = match.params.id
 

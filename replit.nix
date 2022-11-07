@@ -1,6 +1,7 @@
 { pkgs }: {
 	deps = [
-		pkgs.vim
+		pkgs.less
+  pkgs.vim
   pkgs.lsof
   pkgs.remind
   pkgs.nodejs-16_x
